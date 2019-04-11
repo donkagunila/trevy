@@ -1,6 +1,44 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+	<div class="container">
+		<a href="" class="navbar-brand">Memories</a>
+
+			 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link d-flex" 
+					   routerLinkActive="active" 
+					   [routerLink]="['/albums']">
+						Albums
+					</a>
+				</li>
+			</ul>
+
+
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item" ngbDropdown>
+					<a class="nav-link d-flex pointer" 
+					    ngbDropdownToggle id="userDropdown">
+						<img src="assets/img/avatar.jpg" class="img-avatar" alt="user">
+					</a>
+
+					 <div ngbDropdownMenu aria-labelledby="userDropdown">
+				        <button ngbDropdownItem>Sign out</button>			      
+				      </div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+
+
+
+<!-- 
 <a routerLink="/login">Login</a>
 <br>
 <a routerLink="/home">Home</a>
 <br>
 <a [routerLink]="['/albums']">Albums</a>
 <a (click) ="logout()">Logout</a>
+ -->

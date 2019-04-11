@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+body{
+	background-color: #F4F6F9;
+	font-family: 'Montserrat', sans-serif;
+	color: #707070;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	color: #707070;
+}
+
+.page-wrapper{
+	padding-top: 80px; 
+}
+.btn.btn-secondary{
+	background-color: #FBFBFB;
+	border: 1px solid #EAEAEA;
+	color: #707070;
+	height: 44px;
+	min-width: 100px;
+}

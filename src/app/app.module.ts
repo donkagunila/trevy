@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS }    from '@angular/common/http';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 // services
 import { AuthService } from './_services/auth.service';
@@ -16,6 +17,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { LoginComponent } from './auth/pages/login/login.component';
 import { MainComponent } from './pages/main/main.component';
+import { AlbumHeadComponent } from './heads/album-head/album-head.component';
 
 
 @NgModule({
@@ -25,13 +27,15 @@ import { MainComponent } from './pages/main/main.component';
     HomeComponent,
     NavbarComponent,
     LoginComponent,
-    MainComponent
+    MainComponent,
+    AlbumHeadComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [
     AuthService,

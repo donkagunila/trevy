@@ -1,0 +1,19 @@
+.album-place{
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+.album-card{
+	height: 200px;
+	width: 200px;
+	margin-bottom: 10px;
+}
+.album-title{
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: capitalize;
+	padding-left: 2px;
+	margin-bottom: 5px;
+}
+.album-desc{
+	font-size: 12px; 
+}
