@@ -1,7 +1,27 @@
 <app-navbar></app-navbar>
 
-<div *ngFor="let album of albums">
-	{{ album.title }}
+<div class="page-wrapper">
+	<app-album-head></app-album-head>
+
+	<div class="container">
+		<div class="row p-10 m-0">
+			<div class="album-place" *ngFor="let album of albums">
+				<div class="card album-card"></div>
+				<p class="album-title">{{ album.title}}</p>
+				<p class="album-desc"><span>0</span> Photos</p>
+			</div>
+
+
+			<div class="card album-card">
+				<div class="center">
+					<div class="card-icon">
+						<span>+</span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
 </div>
 
 
