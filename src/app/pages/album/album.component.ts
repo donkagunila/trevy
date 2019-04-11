@@ -50,13 +50,8 @@ export class AlbumComponent implements OnInit {
   getAllAlbums(){
     this.userService.getAlbums().subscribe(
         (data) => {
-          if (data) {
           this.albums = data;
           console.log(data);
-            // code...
-          } else {
-            console.log('no data');
-          }
         }
       )
   }

@@ -28,11 +28,6 @@ export class UserService {
 
 	// get album by user id
   	getAlbums(): Observable<any>{
-  		return  this.http.get<any>(this.apiUrl + 'user/albums', httpOptions).pipe(
-  			map( data => {
-  				if (!data){
-  					console.log(null);
-  				}
-  			}));
+  		return  this.http.get<any>(this.apiUrl + 'user/albums', httpOptions);
   	}
 }

@@ -4,6 +4,8 @@ import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Album } from '../album';
 
+
+// set headers
 const httpOptions = {
 	headers: new HttpHeaders({
 		'content-type': 'Application/json',
