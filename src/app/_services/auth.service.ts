@@ -19,8 +19,8 @@ const httpOptions = {
 })
 export class AuthService {
 
-  // private apiUrl = 'https://trevy-api.herokuapp.com/api/';
-  private apiUrl = 'http://localhost:8000/api/';
+  private apiUrl = 'https://trevy-api.herokuapp.com/api/';
+  // private apiUrl = 'http://localhost:8000/api/';
 
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
